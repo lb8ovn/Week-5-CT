@@ -12,12 +12,14 @@ print("You have purchased {} books.".format(num_books))
 
 #Loop and branch to calculate points
 if num_books >= 8:
-    points += 30
+    points += 60
 elif num_books >= 6:
-    points += 15
+    points += 30
 elif num_books >= 4:
-    points += 10
+    points += 15
 elif num_books >= 2:
     points += 5
+else:
+    points = 0
 #Display
 print("You have earned a total of {} points.".format(points))
